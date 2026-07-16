@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#3b82f6,#06b6d4);
+
+}
+
+.background-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(4px);
+
+    z-index:-1;
+
+}
+
+.main-wrapper{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.upload-card{
+
+    width:100%;
+
+    max-width:720px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:#e0f2fe;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    color:#0ea5e9;
+
+    font-size:36px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-weight:700;
+
+    color:#1e293b;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+.upload-area{
+
+    display:block;
+
+    border:2px dashed #cbd5e1;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-bottom:25px;
+
+}
+
+.upload-area:hover{
+
+    border-color:#3b82f6;
+
+    background:#f8fbff;
+
+}
+
+.preview-image{
+
+    width:260px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.upload-text i{
+
+    font-size:45px;
+
+    color:#3b82f6;
+
+}
+
+.upload-text p{
+
+    margin-top:10px;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+}
+
+.upload-text span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.btn-primary{
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-weight:600;
+
+}
+
+.result-image{
+
+    width:100%;
+
+    max-width:350px;
+
+    display:block;
+
+    margin:25px auto;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.flower-name{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.confidence-text{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#64748b;
+
+}
+
+.confidence-bar{
+
+    height:28px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    font-weight:600;
+
+}
+
+.footer{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+.upload-card{
+
+padding:25px;
+
+}
+
+.preview-image{
+
+width:100%;
+
+height:auto;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+}

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Flower Classification AI
+{% endblock %}
+
+{% block content %}
+
+<div class="main-wrapper">
+
+<div class="upload-card">
+
+<div class="logo">
+
+<i class="bi bi-flower1"></i>
+
+</div>
+
+<h1>Flower Classification AI</h1>
+
+<p class="subtitle">
+
+Transfer Learning using <strong>XCeption</strong>
+
+</p>
+
+{% if error %}
+
+<div class="alert alert-danger">
+
+{{ error }}
+
+</div>
+
+{% endif %}
+
+<form
+action="/predict"
+method="POST"
+enctype="multipart/form-data">
+
+<label class="upload-area" for="image">
+
+<img
+id="preview"
+class="preview-image"
+style="display:none;">
+
+<div class="upload-text">
+
+<i class="bi bi-cloud-arrow-up-fill"></i>
+
+<p>
+
+Click to choose an image
+
+</p>
+
+<span>
+
+PNG • JPG • JPEG
+
+</span>
+
+</div>
+
+</label>
+
+<input
+type="file"
+id="image"
+name="image"
+accept=".jpg,.jpeg,.png"
+required
+hidden>
+
+<button
+type="submit"
+class="btn btn-primary btn-lg w-100">
+
+<i class="bi bi-search"></i>
+
+Predict Flower
+
+</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+
+Developed by <strong>Muhammad Faris</strong>
+
+<br>
+
+Universitas Bale Bandung
+
+</div>
+
+</div>
+
+{% endblock %}
